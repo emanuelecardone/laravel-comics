@@ -1,0 +1,45 @@
+main{
+    
+    .banner{
+        height: $banner_height;
+        background-image: url('../../../public/images/jumbotron.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .current_series_wrapper{
+        background-color: #1c1c1c;
+
+        .btn{
+            @include common_btn;
+
+            &.up{
+                line-height: 20px;
+                top: -30px;
+            }
+            &.down{
+                line-height: 15px;
+                left: 50%;
+                bottom: 25px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .single_series_wrapper{
+        width: calc(100% / 6);
+        text-transform: uppercase;
+        color: white;
+
+        .thumb_wrapper{
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 150%;
+                object-fit: cover;
+            }
+        }
+    }
+}

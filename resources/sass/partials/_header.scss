@@ -1,0 +1,39 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+header{
+
+    .upper_header{
+        background-color: $primary_color;
+        color: white;
+    }
+
+    .lower_header{
+        height: $head_foot_height;
+
+        ul{ 
+            @include inline_ul;
+            gap: 1.5rem;
+
+            li{ 
+                height: 100%;
+
+                a{  
+                    color: $tertiary_color;
+                    line-height: calc($head_foot_height - 5px);
+
+                    &.current{
+                        color: $primary_color;
+                        border-bottom: 5px solid $primary_color;
+                    }
+                
+                }
+            }
+        }
+
+        .search_subwrapper{
+            border-bottom: 2px solid $primary_color;
+        }
+    }
+    
+}

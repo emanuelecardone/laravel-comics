@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+@mixin inline_ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+@mixin common_btn{
+    background-color: lighten($primary_color, 10%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    width: 250px;
+    padding: 20px 30px;
+}

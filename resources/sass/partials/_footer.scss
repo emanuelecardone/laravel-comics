@@ -1,0 +1,68 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.upper_footer_wrapper{
+    background-image: url('../../../public/images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    .upper_footer_subwrapper{
+        height: $banner_height;
+
+        &.left{
+            padding: 3rem 0;
+
+            .footer_list_wrapper{
+
+                h2{
+                    color: white;
+                    text-transform: uppercase;
+                }
+                a{
+                    color: $secondary_color;
+                    line-height: 22.5px;
+                }
+            }   
+        }
+        &.right{
+            background-image: url('../../../public/images/dc-logo-bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }   
+
+}
+
+.lower_footer_wrapper{
+    text-transform: uppercase;
+    height: $head_foot_height;
+    background-color: $tertiary_color;
+
+
+    a{
+        padding: 1rem;
+        border: 2px solid $primary_color;
+        color: white;
+    }
+    .lower_footer_right{
+        
+        h2{
+            color: $primary_color;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: bolder;
+            gap: 1rem;
+        }
+        a{  
+            padding: 0;
+            border: none;
+        }
+    }    
+    
+}

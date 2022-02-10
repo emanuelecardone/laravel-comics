@@ -1,0 +1,25 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.prefooter_section{
+    background-color: lighten($primary_color, 10%);
+
+    ul{
+        @include inline_ul;
+        
+        li{
+            gap: 15px;
+
+            &:last-child{
+
+                /* Fix per la svg */
+                img{   
+                    transform: scaleX(1.2) scaleY(1.5);
+                }
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+}
