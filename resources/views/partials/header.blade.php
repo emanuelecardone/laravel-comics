@@ -20,17 +20,17 @@
     <div class="lower_header w-100 d-flex justify-content-center align-items-center">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-5">
+                <div class="col-2">
                     <div class="header_logo_wrapper w-100 h-100 d-flex align-items-center">
                         <img class="w_80p" src="{{asset('images/dc-logo.png')}}" alt="Logo DC">
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-8">
                     <div class="header_links_wrapper w-100 h-100 d-flex justify-content-end align-items-center">
                         <ul class="h-100 p-0 m-0">
                             @foreach($header_links as $link)
                                 <li>
-                                    <a href="#">{{$link['text']}}</a>
+                                    <a class="{{ $link['current'] ? 'current' : '' }} d-inline-block" href="#">{{$link['text']}}</a>
                                 </li>
                             @endforeach
                         </ul>

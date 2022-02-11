@@ -8,7 +8,9 @@
                         @forelse($series as $single_series)
                             <div class="single_series_wrapper p_10">
                                 <div class="thumb_wrapper w_200p h_200p">
-                                    <img src="{{$single_series['thumb']}}" alt="{{'Immagine di ' . $single_series['title']}}">
+                                    <a href="{{ route('series', ['id' => $single_series['id']]) }}">
+                                        <img src="{{$single_series['thumb']}}" alt="{{'Immagine di ' . $single_series['title']}}">
+                                    </a>
                                 </div>
                                 <h3 class="mt_10 fs_15">{{$single_series['title']}}</h3>
                             </div>
